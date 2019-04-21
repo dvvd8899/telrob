@@ -15,16 +15,16 @@ bot = telebot.TeleBot(TOKEN)
 def send_welcome(message):
     bot.send_message(message.chat.id, '''
     Hello, I am robot./大家好，我是机器人
-    /start :查看此信息
-    /help :查看IT服务内容
-    /数字 座位号 :请求对应的服务
+    /start ：查看此信息
+    /help ：查看IT服务内容
+    /数字 座位号 ：请求对应的服务
     ''')
 
 @bot.message_handler(commands=['help'])
 def send_welcome(message):
     bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
     May I help you? 请问有什么可以帮您:
-   =================================
+   ============================
    1. WIFI Connection/WIFI接入
    2. Software Problems/软件问题
    3. Printer Problems/打印机故障
@@ -37,9 +37,9 @@ def send_welcome(message):
    10. Request Headset/申请耳机
    11. Request Monitor/申请显示器
    12. Request Laptop/申请笔记本电脑
-   ==================================
-    Notice: Please attach your seat number.
-    注意：请告知您的座位号!!!
+   =============================
+    Notice: Please attach seat number.
+    注意:请告知您的座位号!!!
     ''')
 
 @bot.message_handler(commands=['1','2','3','4','5', '6', '7', '8', '9', '10', '11', '12'])
