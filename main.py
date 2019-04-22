@@ -44,7 +44,10 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['1','2','3','4','5', '6', '7', '8', '9', '10', '11', '12'])
 def send_welcome(message):
-    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='Copy it./收到，祝您工作愉快！@davidsq @JCManicia @RichardSoriao')
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    ''')
 
 @bot.message_handler()
 def echo(message):
