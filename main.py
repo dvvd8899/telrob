@@ -42,12 +42,104 @@ def send_welcome(message):
     注意:请告知您的座位号!!!
     ''')
 
-@bot.message_handler(commands=['1','2','3','4','5', '6', '7', '8', '9', '10', '11', '12'])
+@bot.message_handler(commands=['1'])
 def send_welcome(message):
     bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
     Copy it./收到，祝您工作愉快！
     @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    WIFI Connection
     ''')
+
+@bot.message_handler(commands=['2'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Software Problems
+    ''')
+
+@bot.message_handler(commands=['3'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Printer Problems
+    ''')
+
+@bot.message_handler(commands=['4'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Network Problems
+    ''')
+
+
+@bot.message_handler(commands=['5'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Monitor Problems
+    ''')
+
+@bot.message_handler(commands=['6'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    No Sound
+    ''')
+
+@bot.message_handler(commands=['7'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Slow Laptop
+    ''')
+
+@bot.message_handler(commands=['8'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Request Mouse
+    ''')
+
+@bot.message_handler(commands=['9'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Request Keyboard
+    ''')
+
+@bot.message_handler(commands=['10'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Request Headset
+    ''')
+
+@bot.message_handler(commands=['11'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Request Monitor
+    ''')
+
+@bot.message_handler(commands=['12'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Copy it./收到，祝您工作愉快！
+    @davidsq @JCManicia @robbiesarmiento @RichardSoriao
+    Request Laptop
+    ''')
+
+
 
 @bot.message_handler()
 def echo(message):
