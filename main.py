@@ -24,7 +24,7 @@ def send_welcome(message):
 def send_welcome(message):
     bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
     May I help you? 请问有什么可以帮您:
-   ============================
+   ============
    1. WIFI Connection/WIFI接入
    2. Software Problems/软件问题
    3. Printer Problems/打印机故障
@@ -37,7 +37,7 @@ def send_welcome(message):
    10. Request Headset/申请耳机
    11. Request Monitor/申请显示器
    12. Request Laptop/申请笔记本电脑
-   =============================
+   ============
     Notice: Please attach seat number.
     注意:请告知您的座位号!!!
     ''')
