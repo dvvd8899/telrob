@@ -18,6 +18,7 @@ def send_welcome(message):
     /start ：查看此信息
     /help ：查看IT服务内容
     /数字 座位号 ：请求对应的服务
+    如：/5 M-48 则表示M-48座位显示器故障
     ''')
 
 @bot.message_handler(commands=['help'])
