@@ -140,17 +140,18 @@ def send_welcome(message):
     Request Laptop
     ''')
 
-@bot.message_handler(commands=['ithelpit'])
+@bot.message_handler(commands=['ithelp'])
 def send_welcome(message):
     bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
-    /runas  RunAs Administrator
-    /isp    Show ISP IP list
+    /runas: Run As Administrator
+    /isp:   Show ISP IP list
     ''')
 
 @bot.message_handler(commands=['runas'])
 def send_welcome(message):
     bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
-    Sample: C:\Windows\System32\runas.exe /user:DESKTOP-FSQIAD6\Administrator /savecred "D:\FlyVPN\FlyVPN.exe"
+    Sample:
+    C:\Windows\System32\runas.exe /user:DESKTOP-FSQIAD6\Administrator /savecred "D:\FlyVPN\FlyVPN.exe"
     ''')
 
 @bot.message_handler(commands=['isp'])
