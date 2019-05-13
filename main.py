@@ -140,6 +140,38 @@ def send_welcome(message):
     Request Laptop
     ''')
 
+@bot.message_handler(commands=['ithelpit'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    /runas  RunAs Administrator
+    /isp    Show ISP IP list
+    ''')
+
+@bot.message_handler(commands=['runas'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    Sample: C:\Windows\System32\runas.exe /user:DESKTOP-FSQIAD6\Administrator /savecred "D:\FlyVPN\FlyVPN.exe"
+    ''')
+
+@bot.message_handler(commands=['isp'])
+def send_welcome(message):
+    bot.send_message(reply_to_message_id=message.message_id, chat_id=message.chat.id, text='''
+    SRASI1-WAN2
+    61.238.96.242
+    https://61.238.96.242:9509
+
+    SRASI2-PORT2
+    45.195.88.82
+    https://45.195.88.82:9509
+
+    SUNIWAY-PORT3
+    203.85.84.114
+    https://203.85.84.114:9509
+    
+    SUNIWAY_CN-PORT4
+    14.152.48.162
+    https://14.152.48.162:9509
+    ''')
 
 
 @bot.message_handler()
